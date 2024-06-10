@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú Desplegable</title>
+    <style>
+        /* Estilo general */
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url(https://i.pinimg.com/564x/57/0c/0b/570c0b19d0ffa5846823eb8f08156231.jpg);
+        }
+
+        /* Estilo del menú */
+        .menu {
+            display: flex;
+            background-color: #333;
+            
+        }
+
+        .menu a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+            width: 50%;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .menu a:hover {
+            background-color: #575757;
+        }
+
+        /* Contenedor del menú desplegable */
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        /* Contenido del menú desplegable */
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #f1f1f1;
+        }
+
+        /* Mostrar el menú desplegable al pasar el mouse */
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .encabezado-img{
+
+            background-image: url(https://i.pinimg.com/564x/93/d3/ff/93d3fff30a88c998f56e306483cb385e.jpg);
+            height: 750px;
+            background-size: cover;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-content: center;
+            align-items: center;
+            color: #000000;
+            
+        }
+
+        .blanco{
+            background-color: #ffffff; /* Fondo blanco */
+
+
+        }
+
+
+        h1 {
+            color: #ff7300;
+            font-size: 90px;
+            text-align: center;
+        }
+        
+        .health-damage, .rehab-centers {
+            background: #fff;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            border-radius: 8px;
+        }
+        
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        
+        ul li {
+            background: #e0e0e0;
+            margin: 5px 0;
+            padding: 10px;
+            border-radius: 4px;
+        }
+        
+        
+        
+        .centers li {
+            margin-bottom: 10px;
+        }
+        
+        .centers li a {
+            text-decoration: none;
+            color: #4CAF50;
+            font-weight: bold;
+        }
+        
+        .centers li a:hover {
+            text-decoration: underline;
+        }
+            
+    </style>
+</head>
+<body>
+
+<div class="menu">
+
+
+    <img src="https://i.pinimg.com/564x/e8/79/62/e879629593718dab637d8a97bee2162e.jpg" alt="" width="60px">
+    <div class="dropdown">
+        <a href="#services" class="dropbtn">Introduccion</a>
+        <div class="dropdown-content">
+            <a href="#quees">¿Que es?</a>
+            <a href="#quees">Origen del fentanilo</a>
+        </div>
+
+        
+    </div>
+    <a href="#contact">Centros de Salud y Rehabilitacion </a>
+
+
+    <div class="dropdown">
+        <a href="#services" class="dropbtn">Referentes</a>
+        <div class="dropdown-content">
+            <a href="#service1">Consumo del fentanilo</a>
+            <a href="#service1"> Daños a la salud y efectos</a>
+            <a href="#service1"> Daños a la Sociedad </a>
+        </div>
+    </div>
+
+
+</div>
+
+
+<div class="encabezado-img">
+    <h1 style="font-size: 70px;">EL FENTANILO</h1>
+    <p style="font-size: 40px;">Informacion que salva</p>
+    </div>
+
+
+
+    <center>
+    <div class="blanco" id="quees">
+        <h1>Introducción</h1>
+        <h2>¿Qué es el fentanilo y qué tipo de droga es?</h2>
+        <p>Opioide sintético extremadamente más fuerte que las morfinas. Se utiliza frecuentemente para tratar dolores intensos, particularmente en pacientes con cáncer.</p>
+        
+        <h2>Origen del Fentanilo</h2>
+        <p>Fue desarrollado en 1959, por un grupo belga (Janssen Pharmaceutica), y se utiliza en entornos médicos como analgésico para tratar dolor intenso.</p>
+    
+        <h1>Información Referente</h1>
+        <h2>Edades y clases sociales consumidoras</h2>
+        <ul>
+            <li><strong>Adultos jóvenes (18-35 años)</strong>: Son todos aquellos que tienen ya un registro por abuso de opioides.</li>
+            <li><strong>Pacientes con dolor crónico</strong>: Son aquellos que reciben la droga como tratamiento médico y aliviar el dolor.</li>
+            <li><strong>Usuarios de drogas ilícitas</strong>: Son aquellos que buscan drogas más fuertes y llegan a ser consumidores de drogas mezcladas con fentanilo.</li>
+        </ul>
+        <p>A continuación se muestran dos videos referentes al tema:</p>
+
+    </center>
+
+<center>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/qVRx-G9tPPc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>    
+</center>
+    </div>
+
+
+    <section class="health-damage" id="service1">
+        <h1>Daños que provoca a la salud, sociedad y efectos</h1>
+        <p>El fentanilo tiene efectos devastadores en la salud debido a su alta potencia</p>
+        <ul>
+            <li>Euforia</li>
+            <li>Somnolencia</li>
+            <li>Náuseas y Vómito</li>
+            <li>Depresión respiratoria</li>
+        </ul>
+        <p>Los daños a la sociedad llegan a ser varios pero los más comunes son:</p>
+        <ul>
+            <li>Carga sobre el sistema de salud</li>
+            <li>Incremento de muertes por sobredosis</li>
+            <li>Impacto económico</li>
+        </ul>
+        <div class="video">
+            <p>Video Relacionado</p>
+            <center>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/fpcF9E-jsNY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>    
+            </center>
+
+        </div>
+    </section>
+    <section class="rehab-centers">
+        <center >
+
+            <h1 >Centros de rehabilitación y atención</h1>
+        </center>
+        <p>Los siguientes centros se encargan de:</p>
+        <ul>
+            <li>Desintoxicación supervisada</li>
+            <li>Terapia conductual y psicológica</li>
+        </ul>
+        <ul class="centers" id="contact">
+            <li>Betty Ford Center (EE.UU) - <a href="https://www.hazeldenbettyford.org/esp">Visitar</a></li>
+            <li>Proyecto Hombre (España) - <a href="https://proyectohombre.es/">Visitar</a></li>
+            <li>Fundación Recal (España) - <a href="https://www.fundacionlealtad.org/ong/fundacion-recal/">Visitar</a></li>
+        </ul>
+    </section>
+
+
+
+</body>
+</html>
